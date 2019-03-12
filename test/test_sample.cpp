@@ -14,6 +14,7 @@ class AddTest : public CppUnit::TestFixture {
 private:
         CPPUNIT_TEST_SUITE( AddTest );
         CPPUNIT_TEST( runAddTest );
+        CPPUNIT_TEST( runMulTest );
         CPPUNIT_TEST_SUITE_END();
  
 public:
@@ -24,6 +25,11 @@ public:
         void runAddTest() {
                 CPPUNIT_ASSERT( 5 == add(2,3) );
                 CPPUNIT_ASSERT( 20 == add(10,10) );
+        }
+ 
+        void runMulTest() {
+                CPPUNIT_ASSERT( 6 == add(2,3) );
+                CPPUNIT_ASSERT( 100 == add(10,10) );
         }
 };
  
