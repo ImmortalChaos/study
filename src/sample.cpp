@@ -2,7 +2,7 @@
 #include "sample.h"
 
 // Test Function
-int add(int a, int b) {
-	return a+b;
+int add(int firstNum, int secondNum) {
+	return firstNum + secondNum;
 }
 
