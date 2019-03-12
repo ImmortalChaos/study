@@ -1,6 +1,6 @@
 CXX             = g++ 
 TESTS           = $(wildcard ../test/*.cpp) $(wildcard ../test/*.c)
-SRCS            = $(wildcard ../src/*.cpp) $(wildcard../src/ *.c)
+SRCS            = $(wildcard ../src/*.cpp) $(wildcard ../src/*.c)
 TOBJS           = $(notdir $(TESTS:.cpp=.o))
 SOBJS           = $(notdir $(SRCS:.cpp=.o))
 TARGET          = run_test 
