@@ -1,3 +1,3 @@
-int add(int a, int b);
+int add(int firstNum, int secondNum);
 int mul(int firstNum, int secondNum);
 
