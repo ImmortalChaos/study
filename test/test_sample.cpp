@@ -28,8 +28,8 @@ public:
         }
  
         void runMulTest() {
-                CPPUNIT_ASSERT( 6 == add(2,3) );
-                CPPUNIT_ASSERT( 100 == add(10,10) );
+                CPPUNIT_ASSERT( 6 == mul(2,3) );
+                CPPUNIT_ASSERT( 100 == mul(10,10) );
         }
 };
  
