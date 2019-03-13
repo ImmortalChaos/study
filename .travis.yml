@@ -1,11 +1,11 @@
-language: gcc, python
+language: gcc
 gcc :
   - "4.8"
-python :
-  - "3.6"
+
 install:
   - sudo apt-get install libcppunit-dev
-  - pip install coveralls
+  - gem 'coveralls-gcov'
+
 script:
   - gcc --version
   - cmake --version
@@ -14,4 +14,4 @@ script:
   - ./run_test
 
 after_success:
-  - coveralls
+  - coveralls-gcov
