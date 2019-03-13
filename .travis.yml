@@ -1,4 +1,4 @@
-language: gcc
+language: gcc, python
 gcc :
   - "4.8"
 python :
