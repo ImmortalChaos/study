@@ -1,6 +1,8 @@
 language: gcc
 gcc :
   - "4.8"
+python :
+  - "3.6"
 install:
   - sudo apt-get install libcppunit-dev
   - pip install coveralls
