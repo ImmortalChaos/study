@@ -1,11 +1,19 @@
 language: gcc
 gcc :
   - "4.8"
+
 install:
   - sudo apt-get install libcppunit-dev
+  - pip install --user cpp-coveralls
+
 script:
   - gcc --version
   - cmake --version
   - cd build
   - make
-  - ./run_test
+  - cd ..
+  - ./build/run_test
+
+after_success:
+  - coveralls --exclude test --gcov-options '\-lp'
+
