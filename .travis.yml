@@ -15,4 +15,5 @@ script:
   - ./build/run_test
 
 after_success:
-  - coveralls --exclude test --gcov-options '\-lp' 
+  - coveralls --exclude test --gcov-options '\-lp'
+
