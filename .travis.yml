@@ -3,9 +3,13 @@ gcc :
   - "4.8"
 install:
   - sudo apt-get install libcppunit-dev
+  - pip install coveralls
 script:
   - gcc --version
   - cmake --version
   - cd build
   - make
   - ./run_test
+
+after_success:
+  - coveralls
