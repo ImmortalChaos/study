@@ -25,8 +25,8 @@ then
     rm ${fname}_exe
 fi
 
-g++ -c $1
-g++ -o ${fname}_exe $fname.o
+g++ -c $1 -I../include
+g++ -o ${fname}_exe $fname.o -I../include
 rm $fname.o
 
 
