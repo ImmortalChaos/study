@@ -37,7 +37,7 @@ int getSumByN(int t, int n) {
 	return n*(v*(v+1)) / 2;
 }
 
-int getSumByMath(int toNum) {
+int getSumByEqu(int toNum) {
 	return getSumByN(toNum, 3) + getSumByN(toNum, 5) - getSumByN(toNum, 15);
 }
 
