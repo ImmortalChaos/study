@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "euler_multiplesOf3and5.h"
 
 int getSumByDivide(int toNum) {
